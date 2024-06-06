@@ -1,4 +1,27 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/RfGTOLZs)
-# allp22100X-exercises
+def int_to_roman (num):
 
-Repositório para os exercícios aplicados nas disciplinas relacionadas a programação.
+
+    val = [1000, 900, 500, 400, 100, 90 ,50 ,40 , 10 ,9 ,5, 4, 1]
+    rom = ["M", "CM", "VD", "CD", "C" , "XC" ,"L" ,"XL", "X", "IX" , "V" , "IV" ,"I"]    
+
+   
+    romano = ''
+    i = 0
+    
+
+    while  num > 0:
+
+        for x in range (num // val [i]):
+            num -= val[i]    
+            romano += rom[i] 
+        i += 1  
+
+    return romano
+
+variavel = int_to_roman(1994)
+print(variavel)
+
+
+
+
+
