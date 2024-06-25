@@ -6,7 +6,7 @@ def int_to_roman(num):
     unidade = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
 
     return milhar[num // 1000] + centena[(num % 1000) // 100] + dezena[(num % 100) // 10] + unidade[num % 10]
-    pass
+    
 def roman_to_int(s):
     
     roman_int = { 'I': 1, 'V' : 5, 'X' : 10, 'L' : 50, 'C' : 100, 'D' : 500, 'M' : 1000 }
@@ -21,6 +21,6 @@ def roman_to_int(s):
             total += roman_int[s[i]]
 
     return total
-    pass
-print( int_to_roman(2002))
-print( roman_to_int('MMII'))
+    
+print(int_to_roman(2002))
+print(roman_to_int('MMII'))
